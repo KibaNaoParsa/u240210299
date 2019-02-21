@@ -1,0 +1,17 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "description": "[Blog Post](http://startbootstrap.com/template-overviews/blog-post/) is a basic blog post HTML starter template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "datatables.net-bs": "^1.10.16",
+    "jquery-jcrop": "^0.9.13",
+    "tinymce": "^4.6.5"
+  },
+  "devDependencies": {}
+}

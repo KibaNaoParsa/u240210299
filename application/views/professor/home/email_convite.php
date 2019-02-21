@@ -1,0 +1,1 @@
+<h2>Para se cadastrar no sistema Diggittus como {who}, <a href='{link}'>clique aqui!!!</a></h2>
