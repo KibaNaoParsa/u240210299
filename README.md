@@ -1,5 +1,5 @@
-# Diggittus v1.0
+# Diggittus
 
 **v1.0**
 
-- Opção para adicionar tipo textual
+- Esqueleto do blog pronto; Disponível por controller

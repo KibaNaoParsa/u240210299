@@ -35,26 +35,4 @@ class Esquemas extends CI_Controller {
         $this->layout->layout_professor($dados);
     }
 
-    public function add_genero() {
-        $genero = $this->input->post();
-        $this->form_validation->set_data($genero);
-        $this->form_validation->set_rules("nome", "NOME", "required");
-        if ($this->form_validation->run() != FALSE) {
-            $tem = $this->Crud->select("genero", "nome", $genero);
-            if (empty($tem[0])) {
-                $this->Crud->insere("genero", $genero);
-                $message["cor"] = "success";
-                $message["msg"] = "Gênero adicionado com sucesso!";
-            } else {
-                $message["cor"] = "danger";
-                $message["msg"] = "Já existe um gênero com esse nome!";
-            }
-        } else {
-            $message["msg"] = "Ecolha um nome para o gênero!";
-        }
-        $message["display"] = "block";
-        $this->layout->atualiza_dados($message);
-        redirect("Professor/Esquemas");
-    }
-
 }
