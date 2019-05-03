@@ -10,7 +10,17 @@ class Blog extends CI_Controller {
     }
 
     public function index() {
-        $data['url'] = base_url();
+		
+		  $data['url'] = base_url();		  
+		  
+		  $this->db->select("post.idPOST, post.titulo, post.subtitulo, post.texto, post.autor");
+		  $this->db->from('post');
+		  $this->db->order_by("post.idPOST", 'desc');
+		  $this->db->limit(4);
+		  
+		  $data['POST'] = $this->db->get()->result();
+		  $data['conteudo'] = $this->parser->parse('blog/posts_inicial', $data, TRUE);    	
+
         $this->parser->parse('blog/index', $data);
     }
     

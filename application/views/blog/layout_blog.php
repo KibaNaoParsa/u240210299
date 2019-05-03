@@ -1,3 +1,5 @@
+<!-- AMBIENTE PARA TESTES DO AJAX -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +38,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{url}blog/index">Início</a>
+            <a class="nav-link" href="index.html">Início</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">Sobre</a>
@@ -53,14 +55,14 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: {url}blog_assets/img/home-bg.jpg">
+  <header class="masthead" style="background-image: url('blog_assets/img/home-bg.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
             <h1>Blog Diggittus</h1>
-            <span class="subheading">Lorem ipsum dolor sit amet</span>
+            <span class="subheading">Lorem impsum dolor sit amet</span>
           </div>
         </div>
       </div>
@@ -70,9 +72,9 @@
   <!-- Main Content -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto"> 
-			{conteudo}
-      	<!--
+      <div class="col-lg-8 col-md-10 mx-auto">
+       	{conteudo}
+			<!--        
         <div class="post-preview">
           <a href="post.html">
             <h2 class="post-title">
@@ -125,7 +127,8 @@
             <a href="#">Start Bootstrap</a>
             on July 8, 2019</p>
         </div>
-        <hr>-->
+        <hr>
+        -->
         <!-- Pager -->
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>

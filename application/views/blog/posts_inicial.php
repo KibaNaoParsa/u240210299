@@ -1,0 +1,22 @@
+<?php
+	defined('BASEPATH') OR exit('No direct script access allowed;');
+	
+	foreach($POST as $p) {
+		echo '<div class="post-preview">'.
+					'<a href="post.html">'.
+            	'<h2 class="post-title">'.
+              		$p->titulo.
+            	'</h2>'.
+            	'<h3 class="post-subtitle">'.
+             		$p->subtitulo.
+            	'</h3>'.
+          		'</a>'.
+          		'<p class="post-meta">Texto de '.
+            		'<a href="#">'.$p->autor.'</a>'.
+            	'</p>'.
+        			'</div>
+      			<hr>';
+	}
+			
+?>      	
+ 
